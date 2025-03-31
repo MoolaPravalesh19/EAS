@@ -1,0 +1,255 @@
+/* *{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(https://shiftin.app/wp-content/uploads/2021/10/what-are-employee-management-systems.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+  }
+  
+.header{
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.form1{
+  background-color: rgba(0, 0, 0, 0.822);
+  border: 2px solid black;
+  border-radius: 10px;
+  color: aliceblue;
+}
+.box1{
+  background-color: rgba(0, 0, 0, 0.799);
+}
+.menu{
+  background-color: rgba(0, 0, 0, 0.745);
+  padding-left: 20px;
+  padding-right: 30px;
+  border-bottom-right-radius: 5px;
+
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+.container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.add-employee{
+  background-color: rgba(8, 8, 8, 0.784);
+  border-radius:10px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.587);
+}
+.index{
+  margin-top: 5rem;
+}
+.font{
+  font-size: 1rem;
+}
+.font-sub{
+  font-size: 0.8rem;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://shiftin.app/wp-content/uploads/2021/10/what-are-employee-management-systems.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.637);
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.form1 {
+  background-color: rgba(0, 0, 0, 0.822);
+  border: 2px solid black;
+  border-radius: 10px;
+  color: aliceblue;
+  padding: 20px;
+  max-width: 400px; /* Set a max width for the form */
+  margin: auto; /* Center the form */
+}
+
+/* Responsive Styles for Login Page */
+@media (max-width: 768px) {
+  .form1 {
+    width: 90%; /* Make the form take up 90% of the width on smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .header {
+    font-size: 1.5rem; /* Adjust header font size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .form1 {
+    width: 95%; /* Make the form take up 95% of the width on mobile devices */
+    padding: 10px; /* Reduce padding for mobile devices */
+  }
+
+  .header {
+    font-size: 1.2rem; /* Further adjust header font size for mobile devices */
+  }
+}
+
+@media (max-width: 365px) {
+  .form1 {
+    width: 100%; /* Make the form take up 100% of the width on very small screens */
+    padding: 8px; /* Reduce padding for very small screens */
+  }
+
+  .header {
+    font-size: 1rem; /* Further adjust header font size for very small screens */
+  }
+}
+
+.box1 {
+  background-color: rgba(0, 0, 0, 0.799);
+}
+
+.menu {
+  background-color: rgba(0, 0, 0, 0.745);
+  padding-left: 20px;
+  padding-right: 30px;
+  border-bottom-right-radius: 5px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.add-employee {
+  background-color: rgba(8, 8, 8, 0.784);
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.587);
+}
+
+.index {
+  margin-top: 5rem;
+}
+
+.font {
+  font-size: 1rem;
+}
+
+.font-sub {
+  font-size: 0.8rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form1 {
+    width: 90%; /* Make the form take up 90% of the width on smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .header {
+    font-size: 1.6rem; /* Adjust header font size */
+  }
+
+  .font {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+  .forms{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 1.3rem; /* Further adjust header font size for very small screens */
+  }
+
+  .font {
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+  }
+
+  .form1 {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+  .forms{
+    gap: 20px;
+  }
+}
+@media (max-width: 365px) {
+  .header {
+    font-size: 1.2rem; /* Further adjust header font size for very small screens */
+  }
+  #checkInBtn{
+    margin-left: 15%;
+  }
+  .font {
+    font-size: 0.7rem; /* Further adjust font size for very small screens */
+  }
+
+  .form1 {
+    padding: 10px; /* Reduce padding for very small screens */
+  }
+  .forms{
+    gap: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .form1{
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  .header {
+    font-size: 1.1rem; /* Further adjust header font size for very small screens */
+  }
+  #checkInBtn{
+    margin-left: 15%;
+  }
+  .font {
+    font-size: 0.7rem; /* Further adjust font size for very small screens */
+  }
+  .forms{
+    gap: 20px;
+  }
+  
+}

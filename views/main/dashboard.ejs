@@ -1,0 +1,25 @@
+<% layout('layout/boilerplate.ejs') -%>
+
+    <body>
+        <div class="section d-flex flex-row mb-3" style="gap: 40px;">
+            
+            <div class="menu d-flex flex-column mb-3">
+                <a href="http://localhost:3000/Admin/Dashboard/Employee" class="p-3 mb-3 border-bottom">Employee List</a>
+                <a href="http://localhost:3000/Admin/Dashboard/Attendance" class="p-3 mb-3 border-bottom">Attendance Data</a>
+                <a href="http://localhost:3000/Admin/Dashboard/add-employee" class="p-3 mb-3 border-bottom">Add Employee</a>
+                <a href="http://localhost:3000/logout" class="p-3 mb-5 border-bottom">Logout</a>
+             </div>
+             
+            <div class="main">
+                <h2 class="student" style="color:#FFFF00; font-weight: 600;">Admin Dashboard</h2>
+                <div class="boxes">
+                    <div class="box1" style="color: white;border-radius: 10px; padding: 10px;">
+                        <h1><%= employeecount %></h2>
+                        <h3>Total Employee</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>

@@ -1,0 +1,43 @@
+<% layout('layout/boilerplate.ejs') -%>
+    
+        <div class="container ">
+            <%- include("../includes/flash.ejs")  %>
+            <div id="form" class="col-5 offset-4 mt-5 mb-5 add-employee">
+                <h1 class="text-center" style="color: white;">ADD NEW EMPLOYEE</h1>
+                <form method="post" action="/Admin/new-employee" novalidate class="needs-validation">
+                    <div class="bookname">
+                        <label class="form-label" style="color: white;">Employee Name :</label>
+                        <input type="text" name="username" id="bookname" placeholder="Enter Admin" class="form-control"
+                            required>
+                        <div class="invalid-feedback">
+                            Please provide a Valid Employee Name
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Phone">
+                        <label class="form-label" style="color: white;">Phone Number :</label>
+                        <input type="text" name="Phonenumber" id="bookname" placeholder="Enter Phone Number"
+                            class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please provide a Valid Phone Number
+                        </div>
+                    </div>
+                    <br>
+                    <div class="Email">
+                        <label class="form-label" style="color: white;">Email :</label>
+                        <input type="text" name="Email" id="bookname" placeholder="Enter Email Address"
+                            class="form-control" required>
+                        <div class="invalid-feedback">
+                            Please provide a Valid Email
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <button type="submit" class="btn btn-outline-success mt-4 mb-4">Add Employee</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </body>
+
+        </html>

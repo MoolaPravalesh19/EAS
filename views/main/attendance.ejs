@@ -1,0 +1,61 @@
+<% layout('layout/boilerplate.ejs') -%>
+    <div class="container-fuild">
+        <table class="table table-success table-striped  table-hover ms-5 mt-3"
+            style="border-radius: 30px; border: 2px solid white; ">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center font">Name</th>
+                    <th scope="col" class="text-center font">Lattitude In</th>
+                    <th scope="col" class="text-center font">Longitude In</th>
+                    <th scope="col" class="text-center font">Date</th>
+                    <th scope="col" class="text-center font">City</th>
+                    <th scope="col" class="text-center font">Intime</th>
+                    <th scope="col" class="text-center font">Lattitude Out</th>
+                    <th scope="col" class="text-center font">Longitude Out</th>
+                    <th scope="col" class="text-center font">Date </th>
+                    <th scope="col" class="text-center font">City</th>
+                    <th scope="col" class="text-center font">Outime</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(attendances of attendance){ %>
+                    <tr>
+                        <td class="text-center font-sub">
+                            <%= attendances.username %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.latitudeIn %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.longitudeIn %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.DateIn %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.cityIn %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.intime %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.latitudeOut %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.longitudeOut %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.DateOut %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.cityOut %>
+                        </td>
+                        <td class="text-center font-sub">
+                            <%= attendances.outime %>
+                        </td>
+                    </tr>
+                    <% } %>
+
+            </tbody>
+        </table>
+    </div>

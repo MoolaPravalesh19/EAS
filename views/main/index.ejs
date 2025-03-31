@@ -1,0 +1,37 @@
+
+<% layout('layout/boilerplate.ejs') -%>
+<%- include("../includes/flash.ejs")  %>
+<div class="container-fluid container index" style="height: 68vh;">
+  
+    <div class="row forms" >
+      <!-- <div class="col container col-4">
+        <h1>FJS Enterprenous</h1>
+        <h3>Unlock Your Team's Potential!" "Harmonize Your Employee Experience</h3>
+      </div> -->
+      <div class="col form1 col-4 offset-3">
+        <h1 class="text-center" >Mark your attendance</h1>
+        <form  novalidate class="needs-validation">
+          <label for="exampleFormControlInput1"  class="form-label">Employee name</label>
+          <input type="text" placeholder="Enter your name" class="form-control" id="employeeName">
+        </form>
+        <button type="submit" id="checkInBtn" class="btn btn-outline-success mt-4 mb-4 offset-3">CHECK IN</button>
+          <button type="submit" id="checkOutBtn" class="btn btn-outline-danger mt-4 mb-4">CHECK OUT</button>
+      </div>
+      <div class="col container form1 col-4" >
+        <form method="post" action="/verify"  novalidate class="needs-validation">
+          <h1 class="text-center">Admin</h1>
+          <label for="" class="form-label">Admin Name</label>
+          <input type="text" placeholder="Enter Admin" name="username" class="form-control" required>
+          <div class="invalid-feedback">
+            Please provide a Valid Admin Name
+          </div>
+          <label for="" class="form-label">Password</label>
+          <input type="text" placeholder="Enter your Password" name="password" class="form-control" required>
+          <div class="invalid-feedback">
+            Please provide a Valid Password
+          </div>
+          <button type="submit" class="btn btn-outline-success mt-4 mb-4">Login</button>
+        </form>
+      </div>
+    </div>
+</div>

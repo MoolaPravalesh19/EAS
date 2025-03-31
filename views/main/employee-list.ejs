@@ -1,0 +1,25 @@
+<% layout('layout/boilerplate.ejs') -%>
+    <div class="container-fuild">
+        <table class="table table-success table-striped  table-hover ms-5 mt-3"
+            style="border-radius: 30px; border: 2px solid white; ">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Employee Name</th>
+                    <th scope="col" class="text-center">Employee ID</th>
+                    <th scope="col" class="text-center">Phone Number</th>
+                    <th scope="col" class="text-center">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(employees of employee){ %>
+                <tr>
+                    <td class="text-center"><%= employees.username %></td>
+                    <td class="text-center"><%= employees._id %></td>
+                    <td class="text-center"><%= employees.Phonenumber %></td>
+                    <td class="text-center"><%= employees.Email %></td>
+                </tr>
+                <% } %>
+                
+            </tbody>
+        </table>
+    </div>
